@@ -1,0 +1,28 @@
+* { margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+ }
+
+ body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: slategray;
+ }
+
+ p{
+    color: gold;
+    font-size: 22px;
+ }
+
+ button{
+    margin: 12px;
+    padding: 10px;
+    font-size: 14px;
+    color: blanchedalmond;
+    background-color: black;
+    border-radius: 6px;
+    cursor: pointer;
+ }
