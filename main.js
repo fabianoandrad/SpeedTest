@@ -32,6 +32,9 @@ async function testarDownload() {
     const velocidade = tamanhoMB / tempoSeg;
     //blob = null; // libera memória
 
+    document.querySelector(".loader").style.display = "none";
+    document.querySelector(".veloz").style.display = "block";
+
     return velocidade;
   } catch (err) {
     console.error("Erro ao medir download:", err);
@@ -40,6 +43,9 @@ async function testarDownload() {
 }
 
 function btnSpeedTest() {
+  document.querySelector(".loader").style.display = "block";
+  document.querySelector(".veloz").style.display = "none";
+
   testarLatencia().then((latencia) => {
     console.log("Latência:", latencia, "ms");
     document.getElementById(
