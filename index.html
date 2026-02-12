@@ -1,27 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de velocidade</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Teste de velocidade</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
 
-<body>
-    <div class="loader" style="display: none;"></div>
-    <div class="veloz" style="text-align: center;">
-        <h1>Teste de velocidade</h1>
-        <div>
-            <p id="latence"></p>
-            <p id="speed"></p>
-        
+    <body>
+        <div style="text-align: center;">
+            <h1>Teste de velocidade</h1>
+            <div class="veloz">
+                <p id="latence"></p>
+                <p id="speed"></p>  
+            </div>
+            <div class="loader" style="display: none; width: auto;"></div>
             <button onclick="btnSpeedTest()">Testar velocidade</button>
-        
-            <script src="main.js"></script>
+            
         </div>
-
-    </div>
-</body>
+        
+        <script src="main.js"></script>
+    </body>
 
 </html>
